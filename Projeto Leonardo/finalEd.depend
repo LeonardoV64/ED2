@@ -44,3 +44,18 @@
 	<string.h>
 	"libf.h"
 
+1626448067 source:c:\users\live room\onedrive\Área de trabalho\projeto leonardo\libf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+
+1626446802 c:\users\live room\onedrive\Área de trabalho\projeto leonardo\libf.h
+
+1626447898 source:c:\users\live room\onedrive\Área de trabalho\projeto leonardo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+	<time.h>
+

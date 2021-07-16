@@ -15,8 +15,8 @@ struct NO{
 
 void opcs(){
     printf("\nEscolha um Metodo:\n");
-    printf("1 Ordenado\n");
-    printf("2 Desordenado\n");
+    printf("1 Desordenado\n");
+    printf("2 Ordenado\n");
     printf("3 Encerrar Execucao\n");
 }
 
@@ -93,6 +93,32 @@ Func *data(){//função somente gera o arquivo ordenado
     return func;
 }
 
+Func *datao(){//função somente gera o arquivo ordenado
+    Func *func = (Func*) malloc(TAM * sizeof(Func));
+    int i = 0;
+    char texto[300];
+    FILE *filer;
+    if((filer = fopen("Resultado.csv","r")) == NULL){
+            printf ("Erro na abertura do arquivo.\n");
+        }else{
+            printf("Arquivo aberto com sucesso.\n");
+        }
+
+    while(fgets(texto, 300, filer)){
+        func[i].id = atoi(strtok(texto,";"));
+        strcpy(func[i].nome, strtok(NULL, ";"));
+        func[i].idade = atoi(strtok(NULL, ";"));
+        strcpy(func[i].empresa, strtok(NULL, ";"));
+        strcpy(func[i].dpt, strtok(NULL, ";"));
+        func[i].sal = atof(strtok(NULL, "\n"));
+        i++;
+    }
+    printf("Gerou o vetor\n");
+    fclose(filer);
+
+    return func;
+}
+
 void escreveArq(Func *vet){
     int i = 0;
 
@@ -101,10 +127,9 @@ void escreveArq(Func *vet){
         printf("\nErro na criação do arquivo!");
         exit(1);
     }else{
-        printf("\n\n\nArquivo criado com sucesso!");
+        printf("\nArquivo criado com sucesso!");
     }
 
-    i = 0;
     for(i = 0; i < TAM; i++){
         fprintf( file,"%d;%s;%d;%s;%s;%.2f\n",vet[i].id, vet[i].nome, vet[i].idade, vet[i].empresa, vet[i].dpt, vet[i].sal);
     }

@@ -7,8 +7,8 @@
 int main()
 {
     clock_t t_a, t_d, res;
-    Func *f, *vet;
-    int y =1;
+    Func *f, *vet, *r;
+    int y = 0;
     arvAVL *raiz = cria_arvAVL();
     arvoreLLRB *raizr = cria_arvoreLLRB();
 
@@ -16,6 +16,7 @@ int main()
     heapSort(vet, TAM);
     escreveArq(vet);
 
+    while(y!=3){
     opcs();
     scanf("%d", &y);
 
@@ -26,37 +27,41 @@ int main()
             insere_arvAVL(raiz, *f);
             t_d = clock();
             res = t_d - t_a;
-            printf("%lf", (double)res);
+            printf("Tempo em milissegundos para AVL Desordenada:%lf\n", (double)res);
 
             t_a = clock();
             f = data();
             insere_arvoreLLRB(raizr, *f);
             t_d = clock();
             res = t_d - t_a;
-            printf("%lf", (double)res);
+            printf("Tempo em milissegundos para RB Desordenada:%lf\n", (double)res);
             break;
 
             case 2 :
 
             t_a = clock();
-            insere_arvAVL(raiz, *vet);
+            r = datao();
+            insere_arvAVL(raiz, *r);
             t_d = clock();
             res = t_d - t_a;
-            printf("%lf", (double)res);
+            printf("Tempo em milissegundos para AVL Ordenada:%lf\n", (double)res);
 
             t_a = clock();
-            insere_arvoreLLRB(raizr, *vet);
+            r = datao();
+            insere_arvoreLLRB(raizr, *r);
             t_d = clock();
             res = t_d - t_a;
-            printf("%lf", (double)res);
+            printf("Tempo em milissegundos para RB Ordenada:%lf\n", (double)res);
             break;
 
             case 3 :
             break;
         }
-
+    }
 
     free(f);
-    free(vet);
+    free(r);
+    liberar_arvAVL(raiz);
+    liberar_arvoreLLRB(raizr);
     return 0;
 }

@@ -19,6 +19,8 @@ void heapSort(Func *vet, int tam);
 
 Func *data();
 
+Func *datao();
+
 void escreveArq(Func * vet);
 
 //Arvore RB
