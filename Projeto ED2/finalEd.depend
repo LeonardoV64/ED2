@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1626363552 source:c:\users\leovs\onedrive\햞ea de trabalho\finaled\libf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+
+1626363434 c:\users\leovs\onedrive\햞ea de trabalho\finaled\libf.h
+
+1626363771 source:c:\users\leovs\onedrive\햞ea de trabalho\finaled\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+	<time.h>
+
+1626441611 source:c:\users\angelot\downloads\projeto leonardo\libf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+
+1626440500 c:\users\angelot\downloads\projeto leonardo\libf.h
+
+1626386759 source:c:\users\angelot\downloads\projeto leonardo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+	<time.h>
+
+1626444407 source:c:\users\leovs\onedrive\햞ea de trabalho\projeto leonardo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+	<time.h>
+
+1626444367 c:\users\leovs\onedrive\햞ea de trabalho\projeto leonardo\libf.h
+
+1626444621 source:c:\users\leovs\onedrive\햞ea de trabalho\projeto leonardo\libf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+
+1626541612 source:c:\users\live room\onedrive\햞ea de trabalho\projeto leonardo\libf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+
+1626449748 c:\users\live room\onedrive\햞ea de trabalho\projeto leonardo\libf.h
+
+1626450721 source:c:\users\live room\onedrive\햞ea de trabalho\projeto leonardo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"libf.h"
+	<time.h>
+
