@@ -18,44 +18,45 @@ int main()
     escreveArq(vet);
 
     while(y!=3){
-    opcs();
-    scanf("%d", &y);
+        opcs();
+        scanf("%d", &y);
 
         switch (y){
             case 1 :
-            t_a = clock();
-            f = data();
-            insere_arvAVL(raiz, *f);
-            t_d = clock();
-            res = t_d - t_a;
-            printf("Tempo em milissegundos para AVL Desordenada:%lf\n", (double)res);
+                t_a = clock();
+                f = data();
+                insere_arvAVL(raiz, *f);
+                t_d = clock();
+                res = t_d - t_a;
+                printf("Tempo em milissegundos para AVL Desordenada:%lf\n", (double)res);
 
-            t_a = clock();
-            f = data();
-            insere_arvoreLLRB(raizr, *f);
-            t_d = clock();
-            res = t_d - t_a;
-            printf("Tempo em milissegundos para RB Desordenada:%lf\n", (double)res);
+                t_a = clock();
+                f = data();
+                insere_arvoreLLRB(raizr, *f);
+                t_d = clock();
+                res = t_d - t_a;
+                printf("Tempo em milissegundos para RB Desordenada:%lf\n", (double)res);
             break;
 
             case 2 :
 
-            t_a = clock();
-            r = datao();
-            insere_arvAVL(raiz, *r);
-            t_d = clock();
-            res = t_d - t_a;
-            printf("Tempo em milissegundos para AVL Ordenada:%lf\n", (double)res);
+                t_a = clock();
+                r = datao();
+                insere_arvAVL(raiz, *r);
+                t_d = clock();
+                res = t_d - t_a;
+                printf("Tempo em milissegundos para AVL Ordenada:%lf\n", (double)res);
 
-            t_a = clock();
-            r = datao();
-            insere_arvoreLLRB(raizr, *r);
-            t_d = clock();
-            res = t_d - t_a;
-            printf("Tempo em milissegundos para RB Ordenada:%lf\n", (double)res);
+                t_a = clock();
+                r = datao();
+                insere_arvoreLLRB(raizr, *r);
+                t_d = clock();
+                res = t_d - t_a;
+                printf("Tempo em milissegundos para RB Ordenada:%lf\n", (double)res);
             break;
 
             case 3 :
+                
             break;
         }
     }
